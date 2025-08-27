@@ -1,0 +1,438 @@
+
+/**** colours ****/
+
+:root {
+  --dark-mode-txt-color: #adb3cc;
+  --dark-mode-card-BG-color:#252a41;
+  --dark-mode-text-color:#fff;
+  --light-mode-txt-Hd-color:#1e202a;
+  --light-mode-text-1-color:#63687e;
+  --instagram-border-color:hsl(37, 97%, 70%) to hsl(5, 77%, 71%) to hsl(329, 70%, 58%);
+}
+
+/**** colours ****/
+
+
+
+/* component */
+
+.darkmode-btn-content {
+  padding: 24px 0px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+
+.darkmode-toggle {
+  width: 50px;
+  height: 24px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 2px 6px -2px black ;
+  background-color: #aeb3cb;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.darkmode-btn-content p {
+  padding: 0px;
+}
+
+.darkmode-circle {
+  background-color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 30px;
+  position: absolute;
+  top: 3px;
+  left: 29px;
+}
+
+.darkmode-toggle.active .darkmode-circle {
+  background-color: #1D1F29;
+  left: 4px;
+}
+
+.darkmode-toggle.active {
+  background:linear-gradient(to bottom ,#178FF5, #1db489);
+}
+
+hr {
+  border: 1px solid var(--dark-mode-txt-color);
+}
+/* component */
+
+
+
+/**** typeography ****/
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  color: #1D1F29;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 125%;
+  padding-bottom: 0px;
+  margin: 0px;
+  color: var(--light-mode-txt-Hd-color);
+}
+
+p {
+  font-size: 14px;
+  color: var(--light-mode-text-1-color);
+  line-height: 125%;
+  font-weight: bold;
+  padding-bottom: 24px ;
+  margin: 0px;
+}
+
+/**** typeography ****/
+
+
+/**** body ****/
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+body.darkmode-toggle {
+  background-color: #1D1F29;
+  
+}
+
+/**** body ****/
+
+
+/****** main ******/
+
+header {
+  padding: 32px 25px;
+  height: 190px;
+  background-color: #f5f7ff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/**** data-cards ****/
+
+.data-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  border-top: 5px solid #178FF5;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 32px 64px;
+  background-color: #f0f2fa;
+  width: 55%;
+  position: relative;
+  bottom: 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-1 {
+  border-top: 5px solid #DC414C;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 32px 64px;
+  background-color: #f0f2fa;
+  width: 55%;
+  position: relative;
+  bottom: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat-card-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.data-info {
+  text-align: center;
+}
+
+.data-info > p {
+  font-size: 12px;
+  line-height: 125%;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding-bottom: 24px;
+}
+
+.icon-facebook,
+.icon-twitter,
+.icon-instagram,
+.icon-youtube {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-up {
+  width: 8px;
+  height: auto;
+}
+
+.stat-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+
+.stat-content > p {
+  font-size: 15px;
+  color: #1db489;
+  font-weight: bold;
+  padding: 0px;
+}
+
+.icon {
+  display: flex;
+  gap: 10px;
+}
+
+/**** data-cards ****/
+
+/**** overview-card ****/
+
+.header {
+  margin:48px 25px;
+}
+
+.header > h3 {
+  color: var(--light-mode-text-1-color);
+  margin-bottom: 24px;
+}
+
+.overview-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.overview-card {
+  border-radius: 8px;
+  padding: 32px 64px;
+  background-color: #f0f2fa;
+  width: 85%;
+  bottom: 45px;
+  padding: 24px;
+}
+
+.overview-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.overview-txt > h1 {
+  font-size: 32px;
+  line-height: 125%;
+}
+
+.overview-icon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.data-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:end;
+  align-items: center;
+  gap: 10px;
+}
+
+.data-content > p {
+  color: #1db489;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0px;
+}
+
+
+/**** main ****/
+
+
+/****** media-query ******/
+
+@media screen and (min-width:768px) {
+
+  
+  /***** body *****/
+
+  body {
+    background-color: #fff;
+  }
+
+  body.darkmode-toggle {
+    background-color: #1D1F29;
+  }
+
+  /***** body *****/
+
+
+  /***** main *****/
+
+  header {
+    padding: 40px 90px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  /***** data-cards ****/
+
+  .data-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 40px 0px 40px;
+  }
+
+  .card {
+    width: 20%;
+  }
+
+  .card-1 {
+    width: 20%;
+  }
+
+  /***** data-cards ****/
+
+
+  /**** overview-cards ****/
+
+  .header {
+    margin: 40px 100px;
+  }
+
+  .overview-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .overview-card {
+    width: 39%;
+  }
+
+  /**** overview-cards ****/
+
+
+
+  /***** main *****/
+}
+
+/****** media-query-tablet ******/
+
+
+/****** media-query-destktop ******/
+
+@media screen and (min-width:1440px) {
+
+  /**** components ****/
+
+  .darkmode-btn-content {
+    display: flex;
+    justify-content: end;
+    padding: 0px;
+    gap: 20px;
+    position: relative;
+    bottom: 75px;
+  }
+
+  hr {
+    border: none;
+  }
+  
+  /**** body ****/
+
+  
+
+  /**** body ****/
+
+
+
+  /**** main ****/
+
+  header {
+    padding: 32px 170px;
+  }
+
+  /**** data-cards ****/
+  .data-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 140px 0px ;
+  }
+
+  .card {
+    width: 12%;
+    bottom: 110px;
+  }
+
+  .card-1 {
+    position: relative;
+    bottom: 110px;
+    width: 12%;
+  }
+
+  /**** data-cards ****/
+
+
+
+  /**** overview-cards ****/
+
+  .header {
+    margin: 40px 150px;
+  }
+
+  .header > h3 {
+    margin-left: 10px;
+  }
+
+  .overview-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .overview-card {
+    width: 19%;
+  }
+
+  /**** overview-cards ****/
+
+
+  /**** main ****/
+
+}
+
+/****** media-query-destktop ******/
